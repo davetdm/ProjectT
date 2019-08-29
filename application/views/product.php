@@ -1,8 +1,20 @@
 <?php require_once "includes/header.php" ?>
+<?php require_once "includes/menu.php"?>
 
-<header>
-    <?php require_once "includes/menu.php"?>
+<header class="masthead" style="background-image: url('<?php echo STATIC_URL; ?>/img/contact-bg.jpg')">
+
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="page-heading">
+                    <h2>Make the Right Choice</h2>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
+
 
 <body>
 <main class="container">
@@ -48,10 +60,5 @@
         </div>
     </div>
 </main>
-
-
-
-
-
 </body>
 <?php require_once "includes/footer.php" ?>

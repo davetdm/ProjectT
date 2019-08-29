@@ -12,7 +12,7 @@ final class IndexController extends Controller {
     function __construct() {
         parent::__construct();
         $this->tokenKey = "index_key";
-        $this->view->setTitle("Tuttie" . SITE_TITLE);
+        $this->view->setTitle("Shopping Cart" . SITE_TITLE);
     }
 
     public function index() {
