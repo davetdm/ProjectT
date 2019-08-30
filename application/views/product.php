@@ -1,16 +1,17 @@
-<?php require_once "includes/header.php" ?>
 
-<header>
-    <?php require_once "includes/menu.php"?>
-</header>
-
-<body>
-<main class="container">
+<section class="container">
+    <div class="sidebar">
+        <div class="sidebar_top"></div>
+        <div class="sidebar_item">
+            <div class="col-md-7">
+                <h2>Choose A Color</h2>
+                <form id="frmCart" action="<?php echo ROOT_URL; ?>product/cart" method="post" class="form-area">
     <!--  Heels Image -->
     <div class="left-column">
-        <img data-image="maroon" src="<?php echo STATIC_URL; ?>images/23.jpeg" alt="">
-        <img data-image="blue" src="<?php echo STATIC_URL; ?>images/25.jpeg" alt="">
-        <img data-image="red" class="active" src="<?php echo STATIC_URL; ?>images/24.jpeg" alt="">
+        <img data-image="maroon" src="<?php echo STATIC_URL; ?>img/23.jpg" style="width:200px; height:121px;" alt="">
+        <img data-image="blue" src="<?php echo STATIC_URL; ?>img/25.jpg" style="width:200px; height:121px;" alt="">
+        <img data-image="red" class="active" src="<?php echo STATIC_URL; ?>img/24.jpg" style="width:200px; height:121px;" alt="">
+
     </div>
     <div class="right-column">
         <!--  Heel description -->
@@ -44,14 +45,18 @@
         <!-- Product Price -->
         <div class="product-price">
             <span>R1200</span>
-            <a href="#" class="cart-btn">Add to cart</a>
+            <div> <button type="submit" id="btnSend" name="submit" class="btn btn-primary btn-lg" required="required">Add To Cart</button></div>
         </div>
+    </div
+                </form>
+
+            </div>
+        </div>
+        <!--/.row-->
     </div>
-</main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
 
+</section>
 
-
-
-</body>
-<?php require_once "includes/footer.php" ?>
