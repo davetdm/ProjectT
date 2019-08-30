@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <body style="background-color: #cccccc">
 
 <section class="container">
@@ -7,6 +8,28 @@
             <div class="col-md-7">
                 <h2>Choose A Color</h2>
                 <form id="frmCart" action="<?php echo ROOT_URL; ?>product/cart" method="post" class="form-area">
+=======
+<?php require_once "includes/header.php" ?>
+<?php require_once "includes/menu.php"?>
+
+<header class="masthead" style="background-image: url('<?php echo STATIC_URL; ?>/img/contact-bg.jpg')">
+
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="page-heading">
+                    <h2>Make the Right Choice</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<body>
+<main class="container">
+>>>>>>> c65233ec4c244f782384147df8093dce65d4fb78
     <!--  Heels Image -->
     <div class="left-column">
         <img data-image="maroon" src="<?php echo STATIC_URL; ?>images/23.jpg" style="width:200px; height:121px;" alt="">
@@ -48,6 +71,7 @@
             <span>R1200</span>
             <div> <button type="submit" id="btnSend" name="submit" class="btn btn-primary btn-lg" required="required">Add To Cart</button></div>
         </div>
+<<<<<<< HEAD
     </div
                 </form>
 
@@ -62,3 +86,9 @@
 </section>
 
 </body>
+=======
+    </div>
+</main>
+</body>
+<?php require_once "includes/footer.php" ?>
+>>>>>>> c65233ec4c244f782384147df8093dce65d4fb78

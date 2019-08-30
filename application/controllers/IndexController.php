@@ -12,7 +12,11 @@ final class IndexController extends Controller {
     function __construct() {
         parent::__construct();
         $this->tokenKey = "index_key";
+<<<<<<< HEAD
         $this->view->setTitle("Product" . SITE_TITLE);
+=======
+        $this->view->setTitle("Shopping Cart" . SITE_TITLE);
+>>>>>>> c65233ec4c244f782384147df8093dce65d4fb78
     }
 
     public function index() {

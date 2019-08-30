@@ -10,9 +10,10 @@ define('VERSION', "v2.0 - Stable");
 define('COPYRIGHT', "Copyright © 2018 " . APP_NAME . ". All Rights Reserved.");
 define('SUPPORT_EMAIL', 'support@tuttie.io');
 define('CONTACT_SUPPORT', '0624013939');
-define('ROOT_URL', DEVELOPMENT ? "http://www.tuttie.local" . DS : "https://www.tuttie.io" . DS);
+define('ROOT_URL', DEVELOPMENT ? "http://www.projectt.local" . DS : "https://www.projectt.io" . DS);
 define('STATIC_URL', ROOT_URL . "static" . DS);
 define('MEDIA_URL', ROOT_URL . "media" . DS);
+define('DATABASE', "product_db");
 
 if (DEVELOPMENT) {
     error_reporting(E_ALL);
