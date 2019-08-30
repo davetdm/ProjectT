@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faee9cf7-64cf-4f24-b805-5f7a2dfa1bce" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/23.jpeg" afterPath="$PROJECT_DIR$/static/img/23.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/24.jpeg" afterPath="$PROJECT_DIR$/static/img/24.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/25.jpeg" afterPath="$PROJECT_DIR$/static/img/25.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/IndexController.php" afterPath="$PROJECT_DIR$/application/controllers/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/product.php" afterPath="$PROJECT_DIR$/application/views/product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/validate.js" afterPath="$PROJECT_DIR$/static/js/validate.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="product.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state relative-caret-position="645">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
@@ -56,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validate.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="validate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/validate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state relative-caret-position="144">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -106,8 +101,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/application/views/product.php" />
         <option value="$PROJECT_DIR$/static/js/validate.js" />
+        <option value="$PROJECT_DIR$/application/views/product.php" />
       </list>
     </option>
   </component>
@@ -299,12 +294,12 @@
       <workItem from="1567083088768" duration="74000" />
       <workItem from="1567083245471" duration="5917000" />
       <workItem from="1567146209406" duration="6000" />
-      <workItem from="1567146381206" duration="4990000" />
+      <workItem from="1567146381206" duration="6183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10987000" />
+    <option name="totallyTimeSpent" value="12180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1053" extended-state="0" />
@@ -475,23 +470,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        <state relative-caret-position="645">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/validate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>

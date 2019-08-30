@@ -55,8 +55,8 @@
         <!--/.row-->
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-    <script src="script.js" charset="utf-8"></script>
+    <script src="<?php echo STATIC_URL?>https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="<?php echo STATIC_URL?>script.js" charset="utf-8"></script>
 
 </section>
 
