@@ -1,3 +1,4 @@
+<body style="background-color: #cccccc">
 
 <section class="container">
     <div class="sidebar">
@@ -8,9 +9,9 @@
                 <form id="frmCart" action="<?php echo ROOT_URL; ?>product/cart" method="post" class="form-area">
     <!--  Heels Image -->
     <div class="left-column">
-        <img data-image="maroon" src="<?php echo STATIC_URL; ?>img/23.jpg" style="width:200px; height:121px;" alt="">
-        <img data-image="blue" src="<?php echo STATIC_URL; ?>img/25.jpg" style="width:200px; height:121px;" alt="">
-        <img data-image="red" class="active" src="<?php echo STATIC_URL; ?>img/24.jpg" style="width:200px; height:121px;" alt="">
+        <img data-image="maroon" src="<?php echo STATIC_URL; ?>images/23.jpg" style="width:200px; height:121px;" alt="">
+        <img data-image="blue" src="<?php echo STATIC_URL; ?>images/25.jpg" style="width:200px; height:121px;" alt="">
+        <img data-image="red" class="active" src="<?php echo STATIC_URL; ?>images/24.jpg" style="width:200px; height:121px;" alt="">
 
     </div>
     <div class="right-column">
@@ -60,3 +61,4 @@
 
 </section>
 
+</body>
