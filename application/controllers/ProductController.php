@@ -35,20 +35,28 @@ final class ProductController extends Controller {
 
         $item = [
             $product->id,
-            $product->name,
+            $product->color,
             $product->price,
             $product->qty
         ];
        $cart->insert($item);
         $contents = $cart->contents();
         foreach($contents as $key => $content){
-
-
         }
         $productServices = new ProductServices($this->cnx);
         $productServices->addInfo($this->form->fetchPost());
 
 
+    }
+    public function delete()
+    {
+        $this->form->get("id");
+        $id = $this->form->fetchGet("id");
+        $productModel = new  ProductModel($this->cnx);
+        $product =  $productModel->get($id);
+        $productModel->delete($id);
+        $this->view->setData($product);
+        $this->view->render("delete");
     }
 
 }

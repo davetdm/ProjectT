@@ -32,4 +32,9 @@ final class ProductServices
             return Utils::response("Updated");
         }
     }
+    public function deleteProduct($id){
+
+        $productModel = new ProductModel($this->cnx);
+        $productModel->delete($id);
+    }
 }
