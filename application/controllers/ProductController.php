@@ -19,7 +19,7 @@ final class ProductController extends Controller {
         $productServices = new ProductServices($this->cnx);
         $product = $productServices->getProducts();
         $this->view->setData($product);
-        $this->view->render("product");
+       // $this->view->render("product");
     }
 
     //add the product items in the product list
@@ -33,20 +33,24 @@ final class ProductController extends Controller {
         $product = $productModel->get($id);
 
         $item = [
-            $product->id,
-            $product->name,
-            $product->price,
-            $product->qty
+          "id" =>  $product->id,
+          "name"=>  $product->color,
+           "price" => $product->price,
+           "qty" => $product->qty
         ];
        $cart->insert($item);
         $contents = $cart->contents();
         foreach($contents as $key => $content){
 
-
         }
         $productServices = new ProductServices($this->cnx);
         $productServices->addInfo($this->form->fetchPost());
 
+
+    }
+    public function check_out(){
+
+        $this->view->render("checkout");
 
     }
 
