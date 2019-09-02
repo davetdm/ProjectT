@@ -25,6 +25,7 @@ final class ProductController extends Controller {
     //add the product items in the product list
     public function addCart()
     {
+
         $cart = new Cart();
         $this->form->post("id")
             ->post("qty");

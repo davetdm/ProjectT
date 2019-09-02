@@ -1,19 +1,9 @@
-$(document).ready(function() {
 
-    $('.color-choose input').on('click', function() {
-        var heelsColor = $(this).attr('data-image');
+$('#frmCatalog').submit(function() {
 
-        $('.active').removeClass('active');
-        $('.left-column img[data-image = ' + heelsColor + ']').addClass('active');
-        $(this).addClass('active');
-    });
-
-});
-$('#frmCart').submit(function() {
-
-    var url = $('#frmCart').attr("action");
-    var method = $('#frmCart').attr("method");
-    var data = $('#frmCart').serialize();
+    var url = $('#frmCatalog').attr("action");
+    var method = $('#frmCatalog').attr("method");
+    var data = $('#frmCatalog').serialize();
 
     $.ajax({
         url: url,
