@@ -19,4 +19,5 @@ final class IndexController extends Controller {
         $this->view->render("product");
     }
 
+
 }
