@@ -5,8 +5,5 @@
 </footer>
 
 <!-- Scripts -->
-<script src="<?php echo STATIC_URL?>js/jquery.min.js"></script>
-<script src="<?php echo STATIC_URL?>js/jquery-migrate.min.js"></script>
-<script src="<?php echo STATIC_URL?>js/bootstrap.min.js"></script>
 <script src="<?php echo STATIC_URL?>js/validate.js"></script>
 

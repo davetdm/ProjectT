@@ -23,9 +23,22 @@ final class ProductController extends Controller {
     }
 
     //add the product items in the product list
+    public function product()
+    {
+        $productModel = new ProductModel($this->cnx);
+        $product = $productModel->get();
+        $this->view->setData($product);
+        $this->view->render("product");
+    }
+    public function add()
+    {
+        $this->form->post("color");
+        $productServices = new ProductServices($this->cnx);
+        echo $productServices->addInfo($this->form->fetchPost());
+    }
+
     public function addCart()
     {
-
         $cart = new Cart();
         $this->form->post("id")
             ->post("qty");
