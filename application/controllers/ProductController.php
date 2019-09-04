@@ -19,44 +19,52 @@ final class ProductController extends Controller {
         $productServices = new ProductServices($this->cnx);
         $product = $productServices->getProducts();
         $this->view->setData($product);
-        $this->view->render("product");
+      //  $this->view->render("product");
     }
-
-    //add the product items in the product list
-    public function addCart()
+    public function add()
     {
-
+        $this->form->post("id")
+            ->post("color")
+            ->post("price")
+            ->post("qty");
+        $productServices = new ProductServices($this->cnx);
+        echo $productServices->addInfo($this->form->fetchPost());
+    }
+    //add the product items in the product list
+    public function add_cart()
+    {
         $cart = new Cart();
         $this->form->post("id")
-            ->post("qty");
+                   ->post("qty");
         $id = $this->form->fetchPost("id");
-        $productModel =new ProductModel($this->cnx);
+        $productModel = new ProductModel($this->cnx);
         $product = $productModel->get($id);
 
         $item = [
-            $product->id,
-            $product->color,
-            $product->price,
-            $product->qty
+          "id"=> $product['id'],
+          "color" => $product['color'],
+          "price" => $product['price'],
+           "qty"=> $product['qty']
         ];
        $cart->insert($item);
-        $contents = $cart->contents();
-        foreach($contents as $key => $content){
-        }
-        $productServices = new ProductServices($this->cnx);
-        $productServices->addInfo($this->form->fetchPost());
-
-
+       $contents = $cart->contents();
+       foreach($contents as $key => $content)
+       {
+           $cart->update($content);
+            $content->name;
+            $content->price;
+            $content->qty;
+            $content->subtotal;
+       }
     }
-    public function delete()
-    {
-        $this->form->get("id");
-        $id = $this->form->fetchGet("id");
-        $productModel = new  ProductModel($this->cnx);
-        $product =  $productModel->get($id);
-        $productModel->delete($id);
-        $this->view->setData($product);
-        $this->view->render("delete");
+    public function delete_item($id){
+        $cart = new Cart();
+        $cart->remove($id);
+    }
+    public function check_out(){
+
+
     }
 
 }
+
