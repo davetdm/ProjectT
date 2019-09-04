@@ -19,6 +19,7 @@ final class ProductServices
         $productModel = new ProductModel($this->cnx);
         return $productModel->get();
     }
+
     public function addInfo($data)
     {
         $productModel = new ProductModel($this->cnx);
