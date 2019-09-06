@@ -62,6 +62,7 @@ final class ProductController extends Controller {
         $cart->remove($id);
     }
     public function check_out(){
+        
         $id = $_GET["id"];
         $productModel = new ProductModel($this->cnx);
         $product = $productModel->get($id);
